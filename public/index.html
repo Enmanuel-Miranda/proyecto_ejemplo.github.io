@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Pagina simple con informacion sobre mi">
+    <meta name="keywords" content="conversor, experiencia">
+    <meta name="author" content="Miranda Enmanuel">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--esto par el caso de internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--hoja de normalizacion de css-->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/src/assets/icons/computadora.png" type="image/x-icon">
+
+    <title>CONVERSOR DE MONEDA</title>
+</head>
+
+
+<body>
+
+    <header id="cabecera">
+        <div class="contenido-cabecera">
+            <h1>Miranda Enmanuel</h1>
+        </div>
+        <div id="contenedor_switch">
+            <div class="switch-color">
+                <input type="checkbox" id="dark-mode">
+                <label for="dark-mode">Dark mode</label>
+            </div> 
+        </div>
+    
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Conversor</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+
+
+    
+
+    <main>
+        <section id="contenedor_1">
+            <h2>Sobre mi</h2>
+            <p>Soy un profesional de la carrera de Computacion e informatica con experiencia laboral en el area tecnica
+                dentro de la empresa MainStream Global Peru. Actualmente aun sigo estudiando y tengo previsto que esteAño
+                voy a terminar mis estudios para poder titularme. Mi objetivo actual es ganar experiencia en el campo y
+                especializarme en el area. El area de TI es muy amplio y con muchas rutas muy interesantes</p>
+
+
+            <figure>
+                <img src="/src/assets/img/laptop.png" alt="Imagen de una laptop" width="600">
+            </figure>
+        </section>
+
+        <section  id="contenedor_2">
+
+            <h2>Conversor de moneda</h2>
+
+            <div>
+                <label for="imonto">Nombre:</label>
+                <input type="text" id="imonto" name="v_monto">
+
+                <label for="ivalor">Tipo de conversion:</label>
+                <select id="ivalor" name="v_valor">
+                    <option value="seleccionar">Seleccione una opcion</option>
+                    <option value="usd">Dolar</option>
+                    <option value="eur">Euro</option>
+                    <option value="gbp">Libra esterlina</option>
+                </select>
+                <button id="btconvertir">Convertir</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+        <ul>
+            <li><a href="https://github.com/Enmanuel-Miranda" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/enmanuel-miranda-035b44247/" target="_blank">Linkedink</a></li>
+        </ul>
+        <p>&copy; 2025 Miranda Enmanuel -  todos los derechos reservados</p>
+
+        
+    </footer>
+
+
+
+
+
+
+    <script src="/src/js/main.js"></script>
+</body>
+
+</html>
